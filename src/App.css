@@ -1,3 +1,28 @@
+nav ul li{
+  display: inline-block;
+  padding: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(66, 65, 65);
+    font-size: 15px;
+}
+
+nav ul li a :hover{
+  background-color:red;
+}
+
+header{
+  position: relative;
+}
+
+hr{
+  color: aliceblue;
+}
+
+
+
+
 .img-profile{
   width: 400px;
   height: 550px;
