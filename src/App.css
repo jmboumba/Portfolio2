@@ -1,3 +1,69 @@
+.img-profile{
+  width: 400px;
+  height: 550px;
+}
+
+.h1{
+  font-size: 25px;
+  margin-top: 250px;
+  color: #fd5d5d;
+}
+
+
+/* src/VerticalMenu.css */
+.vertical-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  float: right;
+  margin-top: 100px;
+  margin-right: 20px;
+  width: 160px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1.1em;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+svg{
+  color: white;
+}
+
+.item-icon{
+  border-radius: 50%; 
+  background-color:gray; 
+  height:40px; 
+  width:40px;
+  align-items: center;
+}
+
+.item-icon:hover{
+  background-color: #fd5d5d;
+}
+
+.menu-item:hover {
+  background-color: #fd5d5d;
+}
+
+.menu-icon {
+  font-size: 1.2em;
+  margin-left: 10px;
+  color: #888;
+}
+
+
+
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +102,7 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
