@@ -3,8 +3,8 @@ import React, {useState} from "react";
 function Header(){
     return(
         <div>
+            <header>
             <nav>
-                <center>
                 <ul>
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">WORK</a></li>
@@ -13,9 +13,11 @@ function Header(){
                     <li><a href="">BLOG </a></li>
                     <li><a href="">CONTACT</a></li>
                 </ul>
-                </center>
+                <hr></hr>
             </nav>
-            <hr></hr>
+            
+            </header>
+            
         </div>
     )
 }
