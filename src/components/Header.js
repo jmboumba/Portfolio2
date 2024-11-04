@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 function Header(){
     return(
-        <div>
+        <div style={{marginBottom:"76px"}}>
             <header>
             <nav>
                 <ul>
