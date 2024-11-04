@@ -5,7 +5,7 @@
 }
 
 .p-about{
-  margin:10px 250px 20px 300px;
+  margin:10px 20% 20px 22%;
   font-size:20px
 }
 
@@ -33,13 +33,12 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  padding: 0 20px;
   z-index: 1000; /* Ensures header stays above other elements */
   border-bottom: 1px solid #ccc;
 }
 
 nav ul{
-  margin-left: 300px;
+  margin-left: 280px;
 }
 
 nav ul li{

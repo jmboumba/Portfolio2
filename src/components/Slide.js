@@ -21,7 +21,7 @@ function Slide(){
                     </marquee>
 
                 </div>
-                <div className="about-pro" style={{display:"inline-block", marginLeft:"100px"}}>
+                <div className="about-pro" style={{display:"inline-block", marginLeft:"10%"}}>
                     <img style={{width:"300px", height:"400px"}} src={`${process.env.PUBLIC_URL}/images/junior.webp`} alt="profile" />
                 </div>
             </div>
