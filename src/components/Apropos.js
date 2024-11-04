@@ -2,7 +2,7 @@ import React from "react";
 
 function Apropos(){
     return(
-        <div>
+        <div style={{width:"100%"}}>
                     <center><p style={{fontWeight:"bold", fontSize:"20px", marginBottom:"50px"}}>A PROPOS</p></center>
                     <p className="p-about">
                         I am a freelance full-stack developer. I have a strong background as a software 

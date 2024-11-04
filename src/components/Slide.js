@@ -3,7 +3,7 @@ import React from "react";
 function Slide(){
 
     return(
-        <div style={{backgroundColor:" white ", height:"550px"}}>
+        <div style={{backgroundColor:" white ", height:"550px", width:"100%"}}>
                 <div className="about-pro" style={{display:"inline-block"}}>
                     <p style={{fontFamily:"sans-serif", fontSize:"20px"}}>Salut, je m'appelle Mboumba Moussavou Junior Melcki</p><br></br>
                     <marquee behavior="slide" direction="right" scrollamount="20" >
@@ -22,7 +22,7 @@ function Slide(){
 
                 </div>
                 <div className="about-pro" style={{display:"inline-block", marginLeft:"10%"}}>
-                    <img style={{width:"300px", height:"400px"}} src={`${process.env.PUBLIC_URL}/images/junior.webp`} alt="profile" />
+                    <img style={{width:"100%", height:"400px"}} src={`${process.env.PUBLIC_URL}/images/junior.webp`} alt="profile" />
                 </div>
             </div>
     )
