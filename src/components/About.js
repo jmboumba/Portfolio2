@@ -6,15 +6,6 @@ function About(){
     return(
         <div>
             <Slide />
-            
-            <div style={{backgroundColor:'gray', height:"130px", width:"100%", alignItems:"center", marginBottom:"150px"}}>
-                <div style={{margin: "0 0 0 30%"}}>
-                    <img style={{height:"100px", margin:"10px 0 0 0%"}} src={`${process.env.PUBLIC_URL}/images/mts.png`} alt="mts" />
-                    <img style={{height:"100px", margin:"10px 0 0 8%"}} src={`${process.env.PUBLIC_URL}/images/alomrane.png`} alt="mts" />
-                    <img style={{height:"100px", margin:"10px 0 0 8%"}} src={`${process.env.PUBLIC_URL}/images/freelancer.png`} alt="mts" />
-
-                </div> 
-            </div>
             <Apropos />
         </div>
     )

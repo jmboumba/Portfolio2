@@ -1,25 +1,31 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import "../App.css"; // CSS file for styling
 
-function Header(){
-    return(
-        <div style={{marginBottom:"76px"}}>
-            <header>
-            <nav>
-                <ul>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">WORK</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">EXPERIENCE</a></li>
-                    <li><a href="">BLOG </a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-                <hr></hr>
-            </nav>
-            
-            </header>
-            
-        </div>
-    )
-}
+const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  return (
+    <header className="header">
+      <div className="logo">MyPortfolio</div>
+      <nav className={`nav ${isMobileMenuOpen ? "active" : ""}`}>
+        <ul className="nav-list">
+          <li><a href="#home">ACCUEIL</a></li>
+          <li><a href="#about">A PROPOS </a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#services">EXPERIENCE</a></li>
+          <li><a href="#services">PROJETS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button className="menu-toggle" onClick={toggleMobileMenu}>
+        &#9776; {/* This is a hamburger icon */}
+      </button>
+    </header>
+  );
+};
 
 export default Header;
