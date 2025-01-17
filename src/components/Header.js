@@ -1,13 +1,14 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: 'Accueil', href: '#', current: true },
-  { name: 'A propos de moi', href: '#', current: false },
-  { name: 'Services', href: '#', current: false },
-  { name: 'Compétences', href: '#', current: false },
-  { name: 'Portfolio', href: '#', current: false },
-  { name: 'Contacts', href: '#', current: false },
+  { name: 'Accueil', href: '/', current: true },
+  { name: 'A propos de moi', href: '/about', current: false },
+  { name: 'Services', href: '/services', current: false },
+  { name: 'Compétences', href: '/competences', current: false },
+  { name: 'Portfolio', href: '/portfolio', current: false },
+  { name: 'Contacts', href: '/contacts', current: false },
 ]
 
 function classNames(...classes) {
@@ -58,7 +59,7 @@ export default function Header() {
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) => (
-            <DisclosureButton
+              <DisclosureButton
               key={item.name}
               as="a"
               href={item.href}

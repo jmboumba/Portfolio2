@@ -23,7 +23,7 @@ const Home = () =>{
     return(
         <>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4" style={{padding:"8% 0 0 0"}}>
-            <div style={{padding:"0 10% 0 10%"}}>
+            <div style={{padding:"0 5% 0 5%"}}>
                 <p class="responsive-paragraph" style={{color:'gray', fontSize:"20px"}}>Salut, je m'appelle Junior MBOUMBA</p>
                 <p class="responsive-paragraph" style={{fontWeight:"bold", fontSize:"25px", fontFamily:"Oswald", textAlign: "justify"}}>
                     Je suis développeur fullstack, maîtrisant les technologies pour créer des 
