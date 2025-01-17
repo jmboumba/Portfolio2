@@ -30,8 +30,8 @@ function About(){
 
     return(
         <div style={{padding:"10% 0 0 10%"}}>
-            <h1 style={{fontFamily:"roboto", fontSize:"20px", fontWeight:"bold", padding:"0 0 5% 0"}}>FORMATIONS ACADEMIQUES</h1>
-            <div className="relative flex flex-col space-y-8" style={{padding:"0 0 0 3%"}}>
+            <h1 style={{fontFamily:"roboto", fontSize:"22px", fontWeight:"bold", padding:"0 0 5% 0", textAlign:"center"}}>FORMATIONS ACADEMIQUES</h1>
+            <div className="relative flex flex-col space-y-8" style={{padding:"0 0 0 0%"}}>
                 {steps.map((step, index) => (
                     <div key={index} className="relative flex items-start space-x-4">
                     {/* Vertical Line */}
@@ -65,6 +65,7 @@ function About(){
                     <div>
                         <h4
                         className={`text-lg font-medium`}
+                        style={{fontWeight:"bold"}}
                         >
                         {step.title}
                         </h4>
@@ -75,10 +76,10 @@ function About(){
                 ))}
             </div>
 
-            <div>
-                <h1 style={{fontFamily:"roboto", fontSize:"20px", fontWeight:"bold", padding:"10% 0 5% 0"}}>CERTIFICATIONS</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div style={{width:"350px"}} class="border border-transparent hover:border-red-500 hover:rounded-md transition-all duration-200 p-4">
+            <div style={{padding:"10% 0 5% 0%"}}>
+                <h1 style={{fontFamily:"roboto", fontSize:"20px", fontWeight:"bold", padding:"10% 0 5% 0", textAlign:"center"}}>CERTIFICATIONS</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4" style={{padding:"0% 0 0% 10%"}}>
+                    <div style={{width:"300px"}} class="border border-transparent hover:border-red-500 hover:rounded-md transition-all duration-200 p-4">
                         <span>SCRUM FPROFESSIONAL FOUNDATION CERTIFICATION</span>
                         <a href="#"><img width={300} src={`${process.env.PUBLIC_URL}/images/certif.png`}/></a>
                     </div>
@@ -90,15 +91,15 @@ function About(){
             </div>
 
             <div >
-                <h1 style={{fontFamily:"roboto", fontSize:"20px", fontWeight:"bold", padding:"10% 0 5% 0"}}>EXPERIENCE PROFESSIONNELLE</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <h1 style={{fontFamily:"roboto", fontSize:"20px", fontWeight:"bold", padding:"10% 0 5% 0", textAlign:"center"}}>EXPERIENCE PROFESSIONNELLE</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4" style={{padding:"0% 0 0% 15%"}}>
                     <div style={{width:"300px",}} class="border border-transparent hover:border-red-500 hover:rounded-md transition-all duration-200 p-4">
                         <p style={{fontWeight:"bold"}}>Holding AL OMRANE</p>
-                        <a href="#"><img width={250} style={{height:"150px", padding:"5% 0 0 3%"}} src={`${process.env.PUBLIC_URL}/images/alomrane.png`}/></a>
+                        <a href="https://www.alomrane.gov.ma/Le-groupe/A-propos"><img width={250} style={{height:"150px", padding:"5% 0 0 3%"}} src={`${process.env.PUBLIC_URL}/images/alomrane.png`}/></a>
                     </div>
                     <div style={{width:"300px"}} class="border border-transparent hover:border-red-500 hover:rounded-md transition-all duration-200 p-4">
                         <p style={{fontWeight:"bold"}}>MTS GROUP AFRICA</p>
-                        <a href="#"><img width={250} style={{height:"150px", padding:"5% 0 0 3%"}} src={`${process.env.PUBLIC_URL}/images/mts.png`}/></a>
+                        <a href="https://mtsgroup.ma/"><img width={250} style={{height:"150px", padding:"5% 0 0 3%"}} src={`${process.env.PUBLIC_URL}/images/mts.png`}/></a>
                     </div>
                 </div>
             </div>

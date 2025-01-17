@@ -17,7 +17,6 @@ function App() {
     <>
       <Header />
       <Home />
-      <About />
       <Footer />
     </>
   );

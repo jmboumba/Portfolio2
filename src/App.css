@@ -128,3 +128,29 @@ footer{
   text-decoration: none;
   
 }
+
+
+
+/* Style de base */
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet de passer à une nouvelle ligne si nécessaire */
+  gap: 1px; /* Ajoute un espacement entre les paragraphes */
+}
+
+.responsive-paragraph {
+  flex: 1 1 calc(50% - 16px); /* Largeur de 50% moins l'espacement */
+  box-sizing: border-box; /* Inclut les bordures et padding dans la largeur */
+  margin: 0;
+  padding: 10px;
+  text-align: justify;
+  
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 600px) {
+  .responsive-paragraph {
+    flex: 1 1 100%; /* Prend toute la largeur */
+  }
+}
+

@@ -9,7 +9,8 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2">
               <span className="w-6 h-6 bg-indigo-500 rounded-full"></span>
-              <h1 className="text-xl font-bold">Your Brand</h1>
+              <div className="logo">My Portfolio</div>
+              
             </div>
             <p className="mt-4 text-gray-400">
               Making the world a better place through constructing elegant hierarchies.
@@ -36,7 +37,7 @@ const Footer = () => {
 
           {/* Links Section */}
           <div>
-            <h3 className="font-bold">Solutions</h3>
+            <h3 className="font-bold">Services</h3>
             <ul className="mt-4 space-y-2 text-gray-400">
               <li>
                 <a href="#" className="hover:text-white">

@@ -3,7 +3,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Accueil', href: '#', current: true },
-  { name: 'A propos', href: '#', current: false },
+  { name: 'A propos de moi', href: '#', current: false },
   { name: 'Services', href: '#', current: false },
   { name: 'Compétences', href: '#', current: false },
   { name: 'Portfolio', href: '#', current: false },
@@ -32,7 +32,7 @@ export default function Header() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <div className="logo">My Portfolio</div>
+              <div className="logo"><a href="">My Portfolio</a></div>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
